@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T4E</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">แนะนำตัว</a></li>
+            <li><a id="current">เข้าสู่ระบบ</a></li>
+            <li><a href="gradecal.html">คำนวณเกรด</a></li>
+            <li><a href="card.html">ทำนายดวง</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Marian Onsite</h1>
+        <img src="image/MarianOnsite.jpg" 
+        height="150" alt="">
+        <form>
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                <table>
+                    <tr>
+                        <td><label>คำนำหน้า : </label></td>
+                        <td><select>
+                            <option>--เลือกคำนำหน้า--</option>
+                            <option>นาย</option>
+                            <option>นางสาว</option>
+                            <option>นาง</option>
+                        </select></td>
+
+                        <td><label> ชื่อจริง : </label></td>
+                        <td><input type="text"></td>
+
+                        <td><label> นามสกุล : </label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>อายุ: </label></td>
+                        <td><select>
+                            <option>-</option>
+                            <option>ยังไม่แก่</option>
+                            <option>แก่แล้ว</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email: </label></td>
+                        <td><input type="email"></td>
+                        <td><label>Password: </label></td>
+                        <td><input type="password"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>ความสนใจ</legend>
+                <table>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label>ชอบออนไลน์มากกว่า</label></td>
+                        <td><input type="checkbox"></td>
+                        <td><label>แบบนี้ก็ดี</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>ความคิดเห็น: </label></td>
+                    </tr>
+                </table>
+                <textarea cols="50" rows="5"></textarea>
+            </fieldset>
+            <br/>
+            <table id="btn">
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

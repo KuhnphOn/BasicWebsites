@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T4E</title>
+    <link rel="stylesheet" href="gradecal.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">แนะนำตัว</a></li>
+            <li><a href="form.html">เข้าสู่ระบบ</a></li>
+            <li><a id="current">คำนวณเกรด</a></li>
+            <li><a href="card.html">ทำนายดวง</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <form>
+            <table>
+                <tr>
+                    <td><label>ได้คะแนนมาเท่าไหร่?</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="question"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="gradecalc()">กดเพื่อคำนวณ</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <h1 id="grade"></h1>
+    <script src="gradecal.js"></script>
+</body>
+
+</html>
